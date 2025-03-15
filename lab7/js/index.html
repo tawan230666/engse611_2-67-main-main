@@ -1,0 +1,27 @@
+<!-- HTML -->
+<p id="example">This is an example paragraph.</p>
+<button id="toggleClassButton">Toggle Class</button>
+
+<!-- CSS -->
+<style>
+    .new-class {
+        color: red;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+</style>
+
+<!-- JavaScript -->
+<script>
+    // เลือกปุ่ม
+    let button = document.getElementById("toggleClassButton");
+
+    // การเพิ่มตัวรับฟังเหตุการณ์ให้กับปุ่ม
+    button.addEventListener("click", function() {
+        // เลือกองค์ประกอบย่อหน้า
+        let paragraph = document.getElementById("example");
+        
+        // สลับคลาส 'new-class' บนย่อหน้า
+        paragraph.classList.toggle("new-class");
+    });
+</script>

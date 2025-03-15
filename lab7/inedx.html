@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <script>
+      /*function printName(name) {
+        console.log(name);
+      }
+
+      // ย่อฟังก์ชั่น
+      const printName1 = (name) => {
+        console.log(name);
+      };
+      const printName2 = (name, surname) => {
+        console.log(name, surname);
+      };
+      const mul = (number) => {
+        return number * 2;
+      };
+      console.log(mul(230666));
+
+      // function เรียกใช้ซ้ำ
+      function t();
+      console.log("t")​;
+      t()
+
+      // function เรียกใช้ใน​ function ได้
+      function t(c);
+      consloe.log("tc")
+      c
+
+      printName("What");
+      printName1("What");
+      printName2("Hello", "Hello");
+      */
+
+      //------------
+
+      //------------
+      function gcd(a, b, success) {
+        let result;
+        let min = a < b ? a : b;
+        for (let i = min; i >= 1; i--) {
+          if (a % i == 0 && b % i == 0) {
+            result = i;
+            break;
+          }
+        }
+        // Call function and send result back
+        success(result);
+      }
+
+      gcd(66, 99, function (result) {
+        console.log("GCD = " + result);
+      });
+
+      gcd(33, 336699, function (result) {
+        console.log("Finding GCD of 16 and 24");
+        console.log("Result: " + result);
+      });
+
+
+    </script>
+
+  <title>LAB7</title>
+  </head>
+  <body>
+    <div class="container"></div>
+
+  
+  <div class="profile">
+    <img src="../lab6/todolist/รูปภาพ/1_GR7KsWFb0v1rxkC58-UzbQ.webp" alt="javascript DOM" class="Me">
+    
+    <div class="info">
+        <h1>LAB7</h1>
+        <h1>JavaScript DOM Challenges</h1>
+    </div>
+
+    <ul>
+        <img src="../lab6/todolist/รูปภาพ/me.jpg" alt="Me">
+        <li><strong>Name:</strong> Tawan Tippkhun</li>
+        <li><strong>Student ID:</strong> 67543210033-6</li>
+        <li><strong>Sec:</strong> 2</li>
+        <li><strong>Subject:</strong> ENGSE611</li>
+    </ul>
+</div>
+  
+  <!-- ตาราง -->
+  <table class="table">
+    <tr>
+        <th>อันดับ</th>
+        <th>Exercise</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td id="exercise1">Changing Text Content</td>
+        <td><button onclick="exercise1()">Show me</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td id ="exercise2">Modifying CSS Styles</td>
+        <td><button onclick="exercise2()">Show me</button></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td id="exercise3">Adding and Removing Classes</td>
+        <td><button id="Click">Show me</button></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Creating and Appending Elements</td>
+        <td><button onclick="exercise3()">Show me</button></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Removing Elements</td>
+        <td><button onclick="exercise3()">Show me</button></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Handling Events</td>
+        <td><button onclick="exercise3()">Show me</button></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Traversing the DOM</td>
+        <td><button onclick="exercise3()">Show me</button></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Manipulating Form Elements</td>
+        <td><button onclick="exercise3()">Show me</button></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Fetching and Displaying Data</td>
+      <td><button onclick="exercise3()">Show me</button></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Animations and Transitions</td>
+        <td><button onclick="exercise3()">Show me</button></td>
+    </tr>
+    <!-- เพิ่มข้ออื่นๆ ตามต้องการ -->
+</table>
+  </body>
+  <!-- ------------- LAB7 (3-3-68)-------
+
+https://github.com/se-rmutl/engse611_2-67/tree/main/lab6/todolist
+
+https://miro.com/app/board/uXjVIatJ0VQ=/
+
+https://dev.to/hambalee/arrow-function-javascript-51k
+https://marcuscode.com/lang/javascript/arrow-function
+https://marcuscode.com/lang/javascript/callback-function
+https://medium.com/@torycons/javascript-%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3-array-%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%86-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-map-filter-reduce-%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%9C%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99-bfc84e59ebae
+
+
+https://html-preview.github.io /
+ -->
+</html>

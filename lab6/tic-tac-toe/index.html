@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Tic-Tac-Toe</h1>
+
+  <!-- เพิ่มส่วน HTML สำหรับเมนู -->
+  <div id="menu">
+    <button class="neon-btn" data-mode="ai">เล่นกับ AI</button>
+    <button class="neon-btn" data-mode="friend">เล่นกับเพื่อน</button>
+    <select class="neon-select" id="rounds">
+      <option value="3">แข่ง 3 ครั้ง</option>
+      <option value="5">แข่ง 5 ครั้ง</option>
+    </select>
+  </div>
+
+  <div id="scoreboard">
+    <div class="score-item">
+      <span class="neon-text x-score">X: 0</span>
+      <span class="neon-text" id="rounds-display">Round 1/3</span>
+      <span class="neon-text o-score">O: 0</span>
+    </div>
+    <button class="neon-btn restart-btn" id="restart">เริ่มเกมใหม่</button>
+  </div>
+  <br>
+
+  <div id="grid">
+    <div data-index="0"></div> <!--data-index คือการใส่แต่ละช่องลงไป-->
+    <div data-index="1"></div>
+    <div data-index="2"></div>
+
+    <div data-index="3"></div>
+    <div data-index="4"></div>
+    <div data-index="5"></div>
+
+    <div data-index="6"></div>
+    <div data-index="7"></div>
+    <div data-index="8"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

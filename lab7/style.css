@@ -1,0 +1,41 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* รูปซ้าย ข้อความกลาง โปรไฟล์ขวา */
+    width: 80%;
+    margin: 20px auto;
+}
+
+.profile img.Me {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.profile .info {
+    
+    padding: 10px;
+}
+
+.profile ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: auto;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ข้อความอยู่ชิดซ้าย */
+}
+
+.profile ul img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.table {
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
